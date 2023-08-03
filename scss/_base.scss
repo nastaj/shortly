@@ -1,11 +1,13 @@
+@use "variables";
+
 html {
   font-size: 62.5%; // 10/16 = 62.5% = 10px;
 }
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
+  font-weight: $font-weight--regular;
+  font-size: variables.$font-default;
   line-height: 1.6;
   color: #333;
 }
