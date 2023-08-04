@@ -1,11 +1,24 @@
 @use "variables";
 
 .cta {
-  height: 12rem;
+  padding: 6.4rem 0;
 
   color: #fff;
   background-color: variables.$color-primary--violet;
   background-image: url("/images/bg-boost-desktop.svg");
   background-size: cover;
   background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__btn {
+    padding: 1.6rem 5.6rem;
+  }
 }

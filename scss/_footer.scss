@@ -1,2 +1,42 @@
+@use "variables";
+
 .footer {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  padding: 6rem;
+
+  &__col {
+    margin-top: 4.4rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    color: variables.$color-gray-light--1;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s;
+
+    &:hover {
+      color: variables.$color-primary--cyan;
+    }
+  }
+
+  &__icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    margin-right: 2.4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      color: variables.$color-primary--cyan;
+    }
+  }
 }

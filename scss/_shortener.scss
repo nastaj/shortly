@@ -27,13 +27,20 @@
     display: block;
     position: relative;
 
-    &:invalid {
-      outline: 3px solid variables.$color-secondary;
-    }
+    &:focus {
+      &:invalid {
+        outline: 3px solid variables.$color-secondary;
+      }
 
-    &:invalid::placeholder {
-      color: variables.$color-secondary;
+      &:invalid::placeholder {
+        color: variables.$color-secondary;
+      }
     }
+  }
+
+  &__input:focus:invalid + &__label {
+    transform: translateY(50%);
+    opacity: 1;
   }
 
   &__label {
@@ -45,11 +52,6 @@
 
     transform: translateY(-100%);
     opacity: 0;
-  }
-
-  &__input:invalid + &__label {
-    transform: translateY(50%);
-    opacity: 1;
   }
 
   &__btn {
