@@ -16,8 +16,8 @@
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="nav">
+    <section class="section-head">
+      <nav class="container nav">
         <nav class="nav__main">
           <svg class="logo">
             <use href="images/sprite.svg#logo"></use>
@@ -34,11 +34,36 @@
         </menu>
       </nav>
 
-      <header class="header">Header</header>
-      <main class="section-shortener">Link shotener</main>
-      <section class="section-stats">Statistics</section>
-      <section class="section-cta">CTA</section>
-      <footer class="footer">Footer</footer>
-    </div>
+      <header class="container header">
+        <div class="header__text-box">
+          <h1 class="heading-primary">More than just shorter links</h1>
+          <p class="paragraph header__paragraph">
+            Build your brand's recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button class="btn-cta header__btn">Get Started</button>
+        </div>
+        <div class="header__img-box">
+          <img
+            src="images/illustration-working.svg"
+            alt="Illustration"
+            class="header__img"
+          />
+        </div>
+      </header>
+    </section>
+
+    <section class="section-main">
+      <main class="container shortener">Link shotener</main>
+      <section class="container stats">Statistics</section>
+    </section>
+
+    <section class="section-cta">
+      <div class="cta">CTA</div>
+    </section>
+
+    <section class="section-footer">
+      <footer class="container footer">Footer</footer>
+    </section>
   </body>
 </html>

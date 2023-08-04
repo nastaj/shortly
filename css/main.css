@@ -89,15 +89,13 @@ body {
   font-size: 1.8rem;
   line-height: 1.6;
   color: #333;
-}
-
-.container {
-  padding: 0 15rem;
+  overflow-x: hidden;
 }
 
 .logo {
-  height: 25%;
-  width: 25%;
+  display: block;
+  height: 12rem;
+  width: 12rem;
 }
 
 .btn-cta {
@@ -114,7 +112,34 @@ body {
   opacity: 0.5;
 }
 
+.heading-primary {
+  font-size: 9.6rem;
+  line-height: 1.1;
+  color: hsl(260, 8%, 14%);
+  font-weight: 700;
+}
+
+.paragraph {
+  color: hsl(257, 7%, 63%);
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.section-main {
+  background-color: #eff1f7;
+}
+
+.section-footer {
+  background-color: hsl(255, 11%, 22%);
+  height: 12rem;
+}
+
 .nav {
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,21 +202,44 @@ body {
 }
 
 .header {
-  background-color: goldenrod;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__paragraph {
+  margin-top: 1rem;
+  width: 75%;
+}
+.header__btn {
+  margin-top: 2.4rem;
+  padding: 1rem 3.2rem;
+}
+.header__img-box {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  height: 100%;
+  width: 100%;
+}
+.header__img {
+  -webkit-transform: scale(1.8) translateY(-40%);
+      -ms-transform: scale(1.8) translateY(-40%);
+          transform: scale(1.8) translateY(-40%);
+  position: absolute;
+  top: 50%;
+  right: -30%;
 }
 
-.section-shortener {
-  background-color: burlywood;
-}
-
-.section-stats {
-  background-color: slateblue;
-}
-
-.section-cta {
-  background-color: lightgreen;
-}
-
-.footer {
-  background-color: lightblue;
+.cta {
+  height: 12rem;
+  color: #fff;
+  background-color: hsl(257, 27%, 26%);
+  background-image: url("/images/bg-boost-desktop.svg");
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

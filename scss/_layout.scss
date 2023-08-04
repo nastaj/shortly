@@ -1,0 +1,15 @@
+@use "variables";
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+.section-main {
+  background-color: #eff1f7;
+}
+
+.section-footer {
+  background-color: variables.$color-gray-dark--1;
+  height: 12rem;
+}

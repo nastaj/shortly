@@ -1,3 +1,32 @@
+@use "variables";
+
 .header {
-  background-color: goldenrod;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+
+  &__paragraph {
+    margin-top: 1rem;
+    width: 75%;
+  }
+
+  &__btn {
+    margin-top: 2.4rem;
+    padding: 1rem 3.2rem;
+  }
+
+  &__img-box {
+    position: relative;
+    flex: 0 1 50%;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__img {
+    transform: scale(1.8) translateY(-40%);
+
+    position: absolute;
+    top: 50%;
+    right: -30%;
+  }
 }

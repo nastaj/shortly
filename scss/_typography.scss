@@ -1,0 +1,13 @@
+@use "variables";
+
+.heading-primary {
+  font-size: 9.6rem;
+  line-height: 1.1;
+  color: variables.$color-gray-dark--2;
+  font-weight: variables.$font-weight--bold;
+}
+
+.paragraph {
+  color: variables.$color-gray-light--2;
+  font-size: variables.$font-default;
+}
