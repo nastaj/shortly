@@ -1,0 +1,37 @@
+@use "variables";
+
+.links {
+  background-color: #fff;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 1.6rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__before {
+    text-decoration: none;
+    font-weight: variables.$font-weight--medium;
+    color: variables.$color-gray-dark--1;
+  }
+
+  &__after-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__after {
+    text-decoration: none;
+    font-weight: variables.$font-weight--medium;
+    color: variables.$color-primary--cyan;
+    margin-right: 1.6rem;
+  }
+
+  &__btn-copy {
+    font-size: variables.$font-default;
+    padding: 0.8rem 3.2rem;
+    border-radius: 1rem;
+  }
+}

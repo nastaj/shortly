@@ -54,7 +54,34 @@
     </section>
 
     <section class="section-main">
-      <main class="container shortener">Link shotener</main>
+      <main class="container shortener">
+        <form action="#" class="shortener__form">
+          <div class="shortener__input-box">
+            <input
+              id="input-link"
+              type="text"
+              placeholder="Shorten a link here..."
+              class="shortener__input"
+              required
+            />
+            <label for="input-link" class="shortener__label"
+              >Please add a link</label
+            >
+          </div>
+          <button type="submit" class="btn-cta shortener__btn">
+            Shorten it!
+          </button>
+        </form>
+      </main>
+
+      <div class="container links">
+        <a href="#" class="links__before">https://www.frontendmentor.io</a>
+        <div class="links__after-box">
+          <a href="#" class="links__after">https://rel.ink/k4Lkyk</a>
+          <button class="btn-cta links__btn-copy">Copy</button>
+        </div>
+      </div>
+
       <section class="container stats">Statistics</section>
     </section>
 

@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: variables.$font-weight--regular;
   font-size: variables.$font-default;
   line-height: 1.6;
@@ -26,9 +26,9 @@ body {
   font-weight: variables.$font-weight--bold;
   border-radius: 3rem;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 
   &:hover {
-    opacity: 0.5;
+    background-color: #9be3e2;
   }
 }

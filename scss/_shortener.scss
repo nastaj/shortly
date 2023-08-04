@@ -1,2 +1,60 @@
-.section-shortener {
+@use "variables";
+
+.shortener {
+  background-color: variables.$color-primary--violet;
+  background-image: url(/images/bg-shorten-desktop.svg);
+  background-size: cover;
+  border-radius: 1rem;
+  padding: 4.8rem;
+  transform: translateY(-50%);
+
+  &__form {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  &__input-box {
+    flex: 0 1 80%;
+  }
+
+  &__input {
+    outline: none;
+    padding: 1.6rem;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    display: block;
+    position: relative;
+
+    &:invalid {
+      outline: 3px solid variables.$color-secondary;
+    }
+
+    &:invalid::placeholder {
+      color: variables.$color-secondary;
+    }
+  }
+
+  &__label {
+    color: variables.$color-secondary;
+    font-style: italic;
+    font-size: 1.4rem;
+    position: absolute;
+    transition: all 0.2s;
+
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  &__input:invalid + &__label {
+    transform: translateY(50%);
+    opacity: 1;
+  }
+
+  &__btn {
+    padding: 1.6rem 4.8rem;
+    border-radius: 1rem;
+    height: 50%;
+  }
 }
