@@ -6,8 +6,31 @@ html {
 
 body {
   font-family: "Lato", sans-serif;
-  font-weight: $font-weight--regular;
+  font-weight: variables.$font-weight--regular;
   font-size: variables.$font-default;
   line-height: 1.6;
   color: #333;
+}
+
+.container {
+  padding: 0 15rem;
+}
+
+.logo {
+  height: 25%;
+  width: 25%;
+}
+
+.btn-cta {
+  border: none;
+  background-color: variables.$color-primary--cyan;
+  color: #fff;
+  font-weight: variables.$font-weight--bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
