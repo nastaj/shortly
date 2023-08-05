@@ -2,6 +2,14 @@
 
 html {
   font-size: 62.5%; // 10/16 = 62.5% = 10px;
+
+  @media only screen and (max-width: variables.$bp-largest) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: variables.$bp-medium) {
+    font-size: 45%;
+  }
 }
 
 body {
@@ -16,6 +24,11 @@ body {
   display: block;
   height: 12rem;
   width: 12rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    height: 16rem;
+    width: 16rem;
+  }
 }
 
 .btn-cta {

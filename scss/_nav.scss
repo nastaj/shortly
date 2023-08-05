@@ -16,6 +16,10 @@
 
     display: flex;
     gap: 2.4rem;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: none;
+    }
   }
 
   &__item {
@@ -49,9 +53,29 @@
       color: #fff;
       opacity: 0.5;
     }
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: none;
+    }
   }
 
   &__sign-up {
     padding: 1rem 2.4rem;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: none;
+    }
+  }
+
+  .nav__mobile {
+    width: 4.8rem;
+    height: 4.8rem;
+    fill: variables.$color-gray-light--2;
+    display: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: block;
+    }
   }
 }

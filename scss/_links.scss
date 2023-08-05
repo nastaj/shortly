@@ -6,20 +6,42 @@
   margin-bottom: 1.6rem;
   border-radius: 1rem;
   font-size: 2rem;
+  margin-top: -5rem;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @media only screen and (max-width: variables.$bp-large) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
   &__before {
     text-decoration: none;
     font-weight: variables.$font-weight--medium;
     color: variables.$color-gray-dark--1;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: block;
+      width: 100%;
+      padding-bottom: 1.2rem;
+      border-bottom: 1px solid variables.$color-gray-light--1;
+    }
   }
 
   &__after-box {
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      padding: 1.2rem 0;
+    }
   }
 
   &__after {
@@ -27,11 +49,17 @@
     font-weight: variables.$font-weight--medium;
     color: variables.$color-primary--cyan;
     margin-right: 1.6rem;
+    display: block;
   }
 
   &__btn-copy {
     font-size: variables.$font-default;
     padding: 0.8rem 3.2rem;
     border-radius: 1rem;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      margin-top: 1.2rem;
+      width: 100%;
+    }
   }
 }

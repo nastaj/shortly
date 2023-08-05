@@ -6,8 +6,20 @@
   grid-template-columns: 2fr repeat(4, 1fr);
   padding: 6rem;
 
+  @media only screen and (max-width: variables.$bp-large) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: start;
+    text-align: center;
+    row-gap: 3.2rem;
+  }
+
   &__col {
     margin-top: 4.4rem;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      margin: 0;
+    }
   }
 
   &__list {
@@ -23,6 +35,10 @@
     margin-bottom: 0.8rem;
     transition: all 0.2s;
 
+    @media only screen and (max-width: variables.$bp-large) {
+      font-size: variables.$font-default;
+    }
+
     &:hover {
       color: variables.$color-primary--cyan;
     }
@@ -34,6 +50,11 @@
     margin-right: 2.4rem;
     cursor: pointer;
     transition: all 0.2s;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      height: 3.2rem;
+      width: 3.2rem;
+    }
 
     &:hover {
       color: variables.$color-primary--cyan;

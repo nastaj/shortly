@@ -6,14 +6,35 @@
   align-items: center;
   margin-bottom: 9.6rem;
 
+  @media only screen and (max-width: variables.$bp-large) {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
   &__paragraph {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 75%;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      font-size: 2rem;
+      width: 100%;
+    }
   }
 
   &__btn {
     margin-top: 2.4rem;
     padding: 1.6rem 5.2rem;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      font-size: 2rem;
+      padding: 1.6rem 7.2rem;
+    }
+
+    @media only screen and (max-width: variables.$bp-medium) {
+      margin-top: 4.8rem;
+    }
   }
 
   &__img-box {
@@ -21,6 +42,21 @@
     flex: 0 1 50%;
     height: 100%;
     width: 100%;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      display: flex;
+      justify-content: center;
+      order: -1;
+      margin-bottom: 3.2rem;
+      height: 75%;
+      width: 75%;
+    }
+
+    @media only screen and (max-width: variables.$bp-medium) {
+      flex: 0 1 25%;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   &__img {
@@ -29,5 +65,10 @@
     position: absolute;
     top: 50%;
     right: -30%;
+
+    @media only screen and (max-width: variables.$bp-large) {
+      position: static;
+      transform: translateX(20%);
+    }
   }
 }

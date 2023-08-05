@@ -5,6 +5,10 @@
   line-height: 1.1;
   color: variables.$color-gray-dark--2;
   font-weight: variables.$font-weight--bold;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    font-size: 5.6rem;
+  }
 }
 
 .paragraph {
