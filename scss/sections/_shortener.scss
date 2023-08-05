@@ -1,4 +1,4 @@
-@use "variables";
+@use "../abstracts/variables";
 
 .shortener {
   background-color: variables.$color-primary--violet;
