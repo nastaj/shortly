@@ -1,0 +1,42 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translate(100%, -50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(100%, -50%);
+  }
+}
+
+@keyframes append-animate {
+  0% {
+    top: -20%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes hide-animate {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -20%;
+    visibility: hidden;
+  }
+}

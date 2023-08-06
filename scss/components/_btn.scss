@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+
+.btn-cta {
+  border: none;
+  background-color: variables.$color-primary--cyan;
+  color: #fff;
+  font-weight: variables.$font-weight--bold;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #9be3e2;
+  }
+}

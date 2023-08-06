@@ -54,11 +54,28 @@
   &__btn-copy {
     font-size: variables.$font-default;
     padding: 0.8rem 3.2rem;
+    width: 14rem;
     border-radius: 1rem;
 
     @media only screen and (max-width: variables.$bp-large) {
       margin-top: 1.2rem;
       width: 100%;
     }
+
+    &--active {
+      background-color: variables.$color-gray-dark--1;
+    }
+
+    &--active:hover {
+      background-color: variables.$color-gray-dark--2;
+    }
+  }
+}
+
+.links-list {
+  margin-top: -5rem;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    margin-top: -10rem;
   }
 }

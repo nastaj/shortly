@@ -1,0 +1,69 @@
+@use "../abstracts/variables";
+@use "../base/animations";
+
+.nav-mobile {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  background-color: variables.$color-primary--violet;
+  width: 90%;
+  padding: 9.6rem 3.2rem;
+  border-radius: 1rem;
+  animation: slideIn 0.5s;
+
+  &--hidden {
+    visibility: hidden;
+    transition: visibility 0s linear 0.2s;
+    animation: slideOut 0.5s;
+  }
+
+  &__list {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid variables.$color-gray-light--2;
+  }
+
+  &__item {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: variables.$font-weight--bold;
+    transition: color 0.2s;
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+
+    &:hover {
+      color: variables.$color-gray-light--1;
+    }
+  }
+
+  &__menu {
+    font-size: 3.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__login {
+    display: block;
+    border: none;
+    background: none;
+    padding: 1rem 2.4rem;
+    border-radius: 3rem;
+    font-weight: variables.$font-weight--bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 3.2rem;
+
+    &:hover {
+      background-color: variables.$color-primary--cyan;
+    }
+  }
+
+  &__sign-up {
+    padding: 1rem 2.4rem;
+  }
+}

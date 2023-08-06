@@ -2,6 +2,7 @@
 
 html {
   font-size: 62.5%; // 10/16 = 62.5% = 10px;
+  scroll-behavior: smooth;
 
   @media only screen and (max-width: variables.$bp-largest) {
     font-size: 50%;
@@ -18,29 +19,4 @@ body {
   font-size: variables.$font-default;
   line-height: 1.6;
   overflow-x: hidden;
-}
-
-.logo {
-  display: block;
-  height: 12rem;
-  width: 12rem;
-
-  @media only screen and (max-width: variables.$bp-large) {
-    height: 16rem;
-    width: 16rem;
-  }
-}
-
-.btn-cta {
-  border: none;
-  background-color: variables.$color-primary--cyan;
-  color: #fff;
-  font-weight: variables.$font-weight--bold;
-  border-radius: 3rem;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: #9be3e2;
-  }
 }

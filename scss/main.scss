@@ -2,8 +2,14 @@
 @forward "base/base";
 @forward "base/typography";
 @forward "base/layout";
+@forward "base/animations";
 
 @forward "abstracts/variables";
+
+@forward "components/btn";
+@forward "components/logo";
+@forward "components/nav-mobile";
+@forward "components/popup";
 
 @forward "sections/nav";
 @forward "sections/header";

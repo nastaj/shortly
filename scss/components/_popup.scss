@@ -1,0 +1,35 @@
+@use "../abstracts/variables";
+@use "../base/animations";
+
+.popup {
+  position: fixed;
+  text-align: center;
+
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+  width: 50%;
+  z-index: 999;
+  color: #fff;
+
+  @media only screen and (max-width: variables.$bp-large) {
+    width: 100%;
+  }
+}
+
+.new-popup {
+  animation: append-animate 0.3s ease-in;
+}
+
+.hide-popup {
+  animation: hide-animate 0.3s ease-out;
+}
+
+.success-popup {
+  background-color: rgb(87, 179, 101);
+}
+
+.error-popup {
+  background-color: hsla(358, 79%, 66%);
+}

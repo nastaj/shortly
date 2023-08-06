@@ -18,13 +18,28 @@
   </head>
   <body>
     <section class="section-head">
+      <nav class="nav-mobile nav-mobile--hidden">
+        <ul class="nav-mobile__list">
+          <li>
+            <a href="#section-features" class="nav-mobile__item">Features</a>
+          </li>
+          <li><a href="#" class="nav-mobile__item">Pricing</a></li>
+          <li><a href="#" class="nav-mobile__item">Resources</a></li>
+        </ul>
+
+        <menu class="nav-mobile__menu">
+          <button class="nav-mobile__login">Login</button>
+          <button class="btn-cta nav-mobile__sign-up">Sign Up</button>
+        </menu>
+      </nav>
+
       <nav class="container nav">
         <nav class="nav__main">
           <svg class="logo">
             <use href="images/sprite.svg#logo"></use>
           </svg>
           <ul class="nav__list">
-            <li><a href="#" class="nav__item">Features</a></li>
+            <li><a href="#section-features" class="nav__item">Features</a></li>
             <li><a href="#" class="nav__item">Pricing</a></li>
             <li><a href="#" class="nav__item">Resources</a></li>
           </ul>
@@ -64,7 +79,7 @@
     </section>
 
     <section class="section-main">
-      <main class="container shortener">
+      <main class="container shortener" id="shortener">
         <form action="#" class="shortener__form">
           <div class="shortener__input-box">
             <input
@@ -83,8 +98,10 @@
           </button>
         </form>
       </main>
+
       <section class="links-list"></section>
-      <section class="container stats">
+
+      <section class="container stats" id="section-features">
         <h2 class="stats__heading">Advanced Statistics</h2>
         <p class="paragraph">
           Track how your links are performing across the web with our advanced
@@ -130,7 +147,9 @@
     <section class="section-cta">
       <div class="cta">
         <h3 class="cta__heading">Boost your links today</h3>
-        <button class="btn-cta cta__btn">Get Started</button>
+        <a href="#shortener"
+          ><button class="btn-cta cta__btn">Get Started</button></a
+        >
       </div>
     </section>
 
@@ -142,7 +161,9 @@
         <div class="footer__col footer__col-1">
           <h4 class="footer__heading">Features</h4>
           <ul class="footer__list">
-            <li><a href="#" class="footer__item">Link shortening</a></li>
+            <li>
+              <a href="#shortener" class="footer__item">Link shortening</a>
+            </li>
             <li><a href="#" class="footer__item">Branded Links</a></li>
             <li><a href="#" class="footer__item">Analytics</a></li>
           </ul>
