@@ -879,6 +879,7 @@ body {
 }
 .cta__btn {
   padding: 1.6rem 5.6rem;
+  text-decoration: none;
 }
 
 .footer {
