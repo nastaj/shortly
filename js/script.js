@@ -28,7 +28,6 @@ class App {
 
   _hideNav(e) {
     const target = e.target;
-    console.log(target);
     if (target.classList.contains("nav-mobile__item")) {
       mobileNav.classList.add("nav-mobile--hidden");
     }
